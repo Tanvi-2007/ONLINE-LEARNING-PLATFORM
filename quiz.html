@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Codtech</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz</h1>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <p>1. What does HTML stand for?</p>
+      <input type="radio" name="q1" value="correct">Hyper Text Markup Language<br>
+      <input type="radio" name="q1" value="wrong">Home Tool Markup Language<br>
+
+      <p>2. What is the correct tag for inserting a line break?</p>
+      <input type="radio" name="q2" value="correct">&lt;br&gt;<br>
+      <input type="radio" name="q2" value="wrong">&lt;break&gt;<br><br>
+
+      <button type="button" onclick="checkQuiz()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

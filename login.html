@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h2>Login</h2>
+<form onsubmit="login(event)">
+  <input type="email" id="email" placeholder="Enter your email" required />
+  <input type="password" id="password" placeholder="Enter your password" required />
+  <button type="submit">Login</button>
+</form>
+<p>Don't have an account? <a href="signup.html">Sign up</a></p>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+<script>
+  // Your Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB0BBrpQzGgk7vCqkXEH0yrZ_tOU7bxKY0",
+    authDomain: "code-tech-learning.firebaseapp.com",
+    projectId: "code-tech-learning",
+    storageBucket: "code-tech-learning.appspot.com",
+    messagingSenderId: "903039656235",
+    appId: "1:903039656235:web:e658f37db717d562e4656e",
+    measurementId: "G-EC8QT8R114"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<!-- Link to your JavaScript logic (make sure file exists at js/auth.js) -->
+<script src="js/auth.js"></script>
+
+
+</body>
+</html>
